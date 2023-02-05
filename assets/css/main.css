@@ -91,7 +91,9 @@ header li a:hover{
 .contato.git {
     right: 60px;
 }
-
+.contato:hover{
+    border-bottom: 1px solid blue;
+}
 
 
 .apresentacao{
@@ -216,7 +218,7 @@ header li a:hover{
 }
 
 
-
+/* final habilidades */
 
 
 
@@ -281,9 +283,6 @@ header li a:hover{
 /* Fim do header e a apresentação */
 
 
-
-
-
 /* Inicio parte sobre */
 .content_sobre{
     display: grid; 
@@ -294,6 +293,37 @@ header li a:hover{
     margin-top: -50px;
 }
 
+/* Final */
+
+
+/* Inicio habilidades */
+.containerHabilidades{
+    background-color: #f0f1f8;
+    display: grid; 
+    grid-template-columns: 200px;  
+    height: calc(130vh - 43px);
+    justify-content: center;
+}
+.contentHability{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.section_habilidades  img{
+    width: 80%;
+    cursor: pointer;
+    z-index: 1;
+}
+.section_habilidades .titulosection{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
 
 }
     
@@ -358,6 +388,32 @@ header img{
 }
 .imagem.sobre{
     margin-top: -50px;
+}
+
+/* Final */
+
+
+/* Inicio habilidades */
+.containerHabilidades{
+    background-color: #f0f1f8;
+    display: grid; 
+    grid-template-columns: 200px;  
+    height: calc(130vh - 43px);
+    justify-content: center;
+}
+.contentHability{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.section_habilidades  img{
+    width: 80%;
+    cursor: pointer;
+    z-index: 1;
 }
 }
 
