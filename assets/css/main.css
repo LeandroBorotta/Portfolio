@@ -220,7 +220,48 @@ header li a:hover{
 
 /* final habilidades */
 
+/* Inicio projetos */
 
+
+.sectionProjects{
+    background-color: #e0e0e0;
+}
+
+.sectionProjects .titulosection{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.containerProjetos{
+    display: grid;
+    margin: 0 30px;
+}
+.areaProjeto{
+    width: 300px;
+    height: 300px;
+}
+.areaProjeto img{
+    width: inherit;
+    height: inherit;
+}
+.contentProjeto{
+    position: absolute;
+    background-color: rgba( 0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+}
+.contentProjeto h2{
+    margin-bottom: 5px;
+}
+.areaProjeto:hover .contentProjeto{
+    display: flex;
+}
 
 
 
