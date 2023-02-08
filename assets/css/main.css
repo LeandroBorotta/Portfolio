@@ -234,7 +234,11 @@ header li a:hover{
 }
 .containerProjetos{
     display: grid;
-    margin: 0 30px;
+    justify-items: center;
+    grid-template-columns: repeat(2, 50%);
+    gap: 40px 0;
+    
+    margin-top: 40px;
 }
 .areaProjeto{
     width: 300px;
@@ -255,6 +259,9 @@ header li a:hover{
     align-items: center;
     color: white;
     display: none;
+}
+.contentProjeto p{
+    text-align: center;
 }
 .contentProjeto h2{
     margin-bottom: 5px;
@@ -366,6 +373,24 @@ header li a:hover{
     text-transform: uppercase;
 }
 
+/* inicio projetos */
+.containerProjetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 40px 0;
+    margin-top: 40px;
+}
+.areaProjeto{
+    width: 240px;
+    height: 240px;
+}
+.contentProjeto h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 }
     
 
@@ -456,6 +481,18 @@ header img{
     cursor: pointer;
     z-index: 1;
 }
+
+/* inicio projetos */
+.containerProjetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 40px 0;
+    margin-top: 40px;
+}
+
 }
 
 
