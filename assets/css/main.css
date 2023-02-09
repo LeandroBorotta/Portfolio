@@ -148,6 +148,10 @@ header li a:hover{
     font-size: 25px;
     text-transform: uppercase;
 }
+.imagem.sobre img {
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px black;
+}
 .content_sobre{
     display: grid; 
     grid-template-columns: 1fr 1fr;  
@@ -225,6 +229,7 @@ header li a:hover{
 
 .sectionProjects{
     background-color: #e0e0e0;
+    padding: 10px;
 }
 
 .sectionProjects .titulosection{
@@ -270,9 +275,35 @@ header li a:hover{
     display: flex;
 }
 
+/* Final habilidades */
 
-
-
+footer{
+    height: 100px;
+    background-color: #13171b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer span{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+footer a:hover{
+    color: rgb(212, 93, 93);
+}
+.containerLinks{
+    display: flex;
+    flex-direction: column;
+}
+.direitos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
 
 
@@ -339,6 +370,9 @@ header li a:hover{
 }
 .imagem.sobre{
     margin-top: -50px;
+}
+.imagem.sobre img{
+    width: 50%;
 }
 
 /* Final */
@@ -454,6 +488,12 @@ header img{
 }
 .imagem.sobre{
     margin-top: -50px;
+}
+.imagem.sobre{
+    margin-top: -50px;
+}
+.imagem.sobre img{
+    width: 50%;
 }
 
 /* Final */
