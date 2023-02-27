@@ -442,6 +442,24 @@ footer a:hover{
     text-align: center;
     margin-bottom: 10px;
 }
+
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime="right"]{
+    transform: translate(0);
+    overflow: hidden;
+}
+[data-anime="left"]{
+    transform: translate(0);
+    overflow: hidden;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 }
     
 
