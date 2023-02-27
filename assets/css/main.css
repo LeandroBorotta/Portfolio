@@ -29,6 +29,7 @@
     left: 0;
     top: 0;
     transition: all 0.5;
+    z-index: 3;
 }
 
 .menu.active{
@@ -40,23 +41,28 @@
     left: 0;
     top: 0;
     transition: all 0.5s;
+    z-index: 3;
 }
 .menu ul{
     flex-direction: column;
     color: black;
+    z-index: 3;
 }
 .menu li{
     border-bottom: 1px solid black;
+    z-index: 3;
 }
 .menu li:first-child{
     border-top: 1px solid black;
+    z-index: 3;
 }
 .closemenu {
-display: flex;
-justify-content: right;
+    display: flex;
+    justify-content: right;
 }
 .closemenu img{
     margin: 25px 20px;
+    z-index: 3;
 }
 
 header{
@@ -568,6 +574,24 @@ header img{
     margin-top: 40px;
 }
 
+
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime="right"]{
+    transform: translate(0);
+    overflow: hidden;
+}
+[data-anime="left"]{
+    transform: translate(0);
+    overflow: hidden;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 }
 
 
