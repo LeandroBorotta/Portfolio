@@ -54,3 +54,17 @@ function fecharMenu(){
         menu.classList.add('active')
     }
 }
+let animate = document.querySelectorAll("[data-anime]")
+console.log(animate)
+let observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate')
+        } else{
+            entry.target.classList.remove('animate')
+        }
+    })
+})
+animate.forEach((el)=>{
+    observer.observe(el)
+})

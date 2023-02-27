@@ -3,6 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime="right"]{
+    transform: translate(100px);
+    overflow: hidden;
+}
+[data-anime="left"]{
+    transform: translate(-100%);
+    overflow: hidden;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
 .menu{
     display: none;
     position: absolute;
@@ -45,7 +62,7 @@ justify-content: right;
 header{
     max-width: 1840px;
     height: 100px;
-    background-color: #f0f1f8;
+    background-color: #546aff;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -54,7 +71,7 @@ header{
 }
 header .titulo{
     text-transform: uppercase;
-    color:     #3d4b5b;
+    color:  white;
 }
 header img{
     display: none;
@@ -73,7 +90,7 @@ header li a {
     padding: 40px;
     text-decoration: none;
    text-transform: uppercase;
-   color: inherit;
+   color: white;
 }
 header li a:hover{
     color: blue;
